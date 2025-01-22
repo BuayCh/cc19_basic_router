@@ -9,6 +9,11 @@ import Register from "../pages/Register";
 import Manage from "../pages/admin/Manage";
 import Setting from "../pages/admin/Setting";
 import Dashboard from "../pages/admin/dashboard";
+import Recap from "../pages/Recap";
+import RecapUseState from "../pages/RecapUseState";
+import EasyZustand from "../pages/EasyZustand";
+import Product from "../pages/Product";
+import MyCart from "../pages/MyCart";
 function AppRoutes() {
   return (
     <div>
@@ -18,8 +23,15 @@ function AppRoutes() {
           <Route index element={<Home />} />
           <Route path="about" element={<About/>} />
           <Route path="contact" element={<Contact />} />
+          <Route path="product" element={<Product />} />
+          <Route path="mycart" element={<MyCart />} />
+
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+{/* 
+          <Route path="recap" element={<Recap />} />
+          <Route path="recap_state" element={<RecapUseState />} />
+          <Route path="zustand" element={<EasyZustand />} /> */}
         </Route>
 
         {/* Private */}
